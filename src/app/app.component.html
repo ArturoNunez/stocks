@@ -12,8 +12,8 @@ básica y el contenido principa-->
       </nav>
     </div>
   </header>
-  <main class="mdl-layout__content" style="padding: 20px;" *ngIf="stocks">
-    <!--Se utiliza el componente summary-->
-    <summary [stock]="stocks[0]"></summary>
+  <!--Se modifico el archivo para que en lugar que utilice al componente Summary, haga uso del componente Dashboard-->
+  <main class="mdl-layout__content" style="padding: 20px;">
+    <app-dashboard></app-dashboard>
   </main>
 </div>
